@@ -139,7 +139,7 @@ function handleLetterClick() {
     backgroundImg.src = `./assets/noivern${6 - guessesLeft}.png`;
     console.log(`${guessesLeft}`);
   }
-  PokemonRevealed = checkIfPlayerRevealAllLetters();
+  PokemonRevealed = didyouWin();
   checkResult();
 }
 
@@ -156,7 +156,7 @@ function checkLetterInWord(selectedLetter) {
   return result;
 }
 
-function checkIfPlayerRevealAllLetters() {
+function didyouWin() {
   let revealedLetters = Who.querySelectorAll("div");
   let result = true;
   for (let i = 0; i < revealedLetters.length; i++) {
