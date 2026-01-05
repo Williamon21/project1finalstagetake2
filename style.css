@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+}
+
+/*----------------------------------------
+  TOP CONTAINER
+----------------------------------------*/
+.top-ctr {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*----------------------------------------
+  TEXT
+----------------------------------------*/
+p {
+  font-size: 25px;
+}
+
+#head {
+  text-decoration: underline;
+  font-size: 35px;
+}
+
+/*----------------------------------------
+  WHO'S THAT POKÉMON
+----------------------------------------*/
+.WhosThatPokemon {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70vh;
+  font-size: 50px;
+}
+
+.WhosThatPokemon > div {
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+}
+
+/*----------------------------------------
+  RULES BOX
+----------------------------------------*/
+.rules {
+  position: absolute;
+  margin: 2rem auto;
+  max-width: 300px;
+  background: rgb(104, 146, 26);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+
+/*----------------------------------------
+  OPTIONS
+----------------------------------------*/
+.optionCtr {
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+  margin-left: 30vh;
+}
+
+.optionOthers {
+  position: absolute;
+  top: 0;
+  margin-left: 20vh;
+  margin-top: 20vh;
+}
+
+.optionDragon {
+  position: absolute;
+  top: 0;
+  margin-right: 20vh;
+  margin-top: 20vh;
+}
+
+
+.optionLegendary {
+  position: absolute;
+  top: 0;
+  margin-left: 0vh;
+  margin-top: 30vh;
+}
+/*----------------------------------------
+  IMAGES
+----------------------------------------*/
+img {
+  height: 50%;
+  width: 50%;
+  border: double grey;
+  border-radius: 3vh;
+}
+
+/*----------------------------------------
+  HEADER
+----------------------------------------*/
+header {
+  height: 10vh;
+  width: 35vh;
+  font-size: 50px;
+}
+
+/*----------------------------------------
+  BUTTONS
+----------------------------------------*/
+#startBtn {
+  border-radius: 5px;
+  background-color: rgb(224, 228, 0);
+  font-family: "Press Start 2P", monospace;
+  height: 5vh;
+  width: 10vh;
+  margin-top: 10vh;
+}
+
+#category {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16vh;
+}
+
+button {
+  border: 0;
+  height: 3vh;
+  width: 10vh;
+  margin-top: 1vh;
+  font-family: "Press Start 2P", monospace;
+  background-color: rgb(195, 219, 240);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.reset {
+  position: fixed;     /* stays in the same spot even when scrolling */
+  top: 1rem;           /* distance from the top of the viewport */
+  right: 1rem;         /* distance from the right edge of the viewport */
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #455eca;
+  color: black;
+  font-family: "Press Start 2P", monospace;
+  border: none;
+  z-index: 1000;       /* ensures it sits above everything */
+  transition: all 0.3s ease;
+
+}
+
+/*----------------------------------------
+  BODY
+----------------------------------------*/
+body {
+  background-color: #204b26;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "VT323", monospace;
+  font-weight: bold;
+}
+
+/*----------------------------------------
+  MAIN
+----------------------------------------*/
+main {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 30vh;
+}
+
+/*----------------------------------------
+  ASIDE
+----------------------------------------*/
+aside {
+  border: solid;
+  position: absolute;
+  top: 0;
+  display: flex;
+}
+
+/*----------------------------------------
+  SUB-MAIN
+----------------------------------------*/
+sub-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/*----------------------------------------
+  LETTER GRID
+----------------------------------------*/
+.letter-ctr {
+  border-radius: 5px;
+  border: 5px;
+  text-align: center;
+  height: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+/*----------------------------------------
+  FOOTER / POPUP
+----------------------------------------*/
+footer > div {
+  border: 2px solid rgb(185, 185, 185);
+  border-radius: 10px;
+}
+
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
