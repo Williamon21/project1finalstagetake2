@@ -101,6 +101,7 @@ function resetGame() {
   initializeGame();
   Who.innerHTML = "";
   btnStart.style.visibility = "visible";
+  dragonTypes = otrMons = Legendary = null;
   option.style.visibility = "hidden";
   btnStart.innerText = "Start";
   btnLetters.forEach((letter) => {
